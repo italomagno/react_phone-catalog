@@ -1,4 +1,4 @@
-@import '../../../styles/main.scss';
+@import '../../../styles/main';
 
 
 
@@ -40,7 +40,6 @@ gap: 16px;
 
 .sectionLeftButton
 ,.sectionRightButton{
-  height: 100%;
   position: absolute;
   transform: translate(50%, -50%);
   top: 50%;

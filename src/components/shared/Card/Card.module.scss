@@ -1,4 +1,4 @@
-@import '../../../styles/main.scss';
+@import '../../../styles/main';
 
 
 .card{
@@ -89,6 +89,7 @@ color: $secondary-color;
   margin-top: 8px;
 
 };
+
 .cardButtonAddToCart{
   width: 160px;
   height: 40px;
@@ -114,8 +115,10 @@ color: $secondary-color;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+
   &.active {
     background-image: url('../../../../public/icons/heart-filled.svg');
   }
+  
   cursor: pointer;
 };

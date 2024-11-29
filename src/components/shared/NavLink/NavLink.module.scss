@@ -1,10 +1,9 @@
-@import "../../../styles/main.scss";
-.nav
-{
+@import "../../../styles/main";
+
+.nav {
   height: 64px;
 
   width: fit-content;
-  text-decoration: none;
   justify-content: center;
   transition: all 0.3s;
   &:hover{
@@ -14,20 +13,15 @@
 &.active{
     border-bottom: solid 1px $primary-color;
 }
-a{
-  text-decoration: none;
-}
 
     .nav__link{
-      text-decoration: none;
       display: flex;
        align-items: center;
-        color: #fff;
         height: 100%;
-        text-decoration: none;
+
         transition: all 0.3s;
         text-transform: uppercase;
-        text-decoration: none;
+
         font-family: $font-family-mont;
         color: $secondary-color;
         font-size: $small-font-size;

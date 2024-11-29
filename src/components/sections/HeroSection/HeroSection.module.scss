@@ -1,4 +1,4 @@
-@import '../../../styles/main.scss';
+@import '../../../styles/main';
 
 
 .heroPageContent{
@@ -10,6 +10,7 @@
   gap: 16px;
 
 };
+
 .heroPageTitle{
   width: 100%;
   margin-top: 120px;
@@ -50,9 +51,6 @@
   cursor: pointer;
   transition: all 0.3s;
 
-  &.active {
-    border:1px solid $elements-active-color;
-  }
 
   &::before {
     content: '';
@@ -76,7 +74,8 @@
   }
 
   &.active {
-
+    border:1px solid $elements-active-color;
+    
     &::before {
       background-color: $primary-color;
     }

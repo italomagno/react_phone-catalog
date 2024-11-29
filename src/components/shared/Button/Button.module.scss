@@ -1,5 +1,5 @@
 
-@import '../../../styles/main.scss';
+@import '../../../styles/main';
 
 .button
  {
@@ -22,13 +22,7 @@
 
     &:hover
      {
-      box-shadow: 0px 3px 13px 0px #17203166;
-     }
-     &:selected
-     {
-      background-color: $white-color;
-      border: solid 1px $elements-color;
-      color: $success-color;
+      box-shadow: 0 3px 13px 0 #17203166;
      }
    }
 
@@ -44,12 +38,6 @@
    {
     border: 1px solid $primary-color;
    }
-   &:selected
-    {
-      background-color: $primary-color;
-      border: none;
-      color: $white-color;
-    }
     &:disabled
      {
       background-color: $white-color;
