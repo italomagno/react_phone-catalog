@@ -1,4 +1,4 @@
-@import '../../../styles/main';
+@import '@styles/main';
 
 
 .card{
@@ -14,7 +14,7 @@
 .cardImage{
   width: 208px;
   height: 196px;
-  background-image: url('../../../public/img/phones/apple-iphone-11-pro-max/gold/00.webp');
+  background-image: url('@public/img/phones/apple-iphone-11-pro-max/gold/00.webp');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -111,14 +111,14 @@ color: $secondary-color;
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-  background-image: url('../../../../public/icons/heart-disbled.svg');
+  background-image: url('@public/icons/heart-disbled.svg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 
   &.active {
-    background-image: url('../../../../public/icons/heart-filled.svg');
+    background-image: url('@public/icons/heart-filled.svg');
   }
-  
+
   cursor: pointer;
 };

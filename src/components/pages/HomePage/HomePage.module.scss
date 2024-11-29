@@ -1,4 +1,4 @@
-@import '../../../styles/main';
+@import '@styles/main';
 
 
 .container{
@@ -33,7 +33,7 @@
   .CategoryImage{
     height: 368px;
     width: 368px;
-    background-image: url('../../../public/img/category-phones.png');
+    background-image: url('@public/img/category-phones.png');
     background-size: cover;
     background-position: center;
     margin: 0 auto;

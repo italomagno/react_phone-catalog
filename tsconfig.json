@@ -4,6 +4,14 @@
     "src"
   ],
   "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@styles/*": ["src/styles/*"],
+      "@utils/*": ["src/utils/*"],
+      "@public/*": ["public/*"],
+      "@sections/*": ["src/sections/*"],
+    },
     "sourceMap": false,
     "types": ["node", "cypress"]
   }

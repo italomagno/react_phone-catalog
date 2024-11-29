@@ -1,4 +1,4 @@
-@import '../../../styles/main';
+@import '@styles/main';
 
 
 .heroPageContent{
@@ -75,7 +75,7 @@
 
   &.active {
     border:1px solid $elements-active-color;
-    
+
     &::before {
       background-color: $primary-color;
     }
@@ -83,17 +83,17 @@
 }
 
 .HeroButtonLeft::before {
-  mask-image: url('../../../../public/icons/chevron-left.svg');
+  mask-image: url('@public/icons/chevron-left.svg');
 }
 
 .HeroButtonRight::before {
-  mask-image: url('../../../../public/icons/chevron-right.svg');
+  mask-image: url('@public/icons/chevron-right.svg');
 }
 
 .heroPageImage{
   width: 1040px;
   height: 400px;
-  background-image: url('../../../public/img/Banner.png');
+  background-image: url('@public/img/Banner.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat

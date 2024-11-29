@@ -1,4 +1,4 @@
-@import '../../../styles/main';
+@import '@styles/main';
 
 
 .header {
@@ -21,7 +21,7 @@
     gap: 24px;
   }
   .header__logo {
-    background-image: url('../../../public/logo/logo.svg');
+    background-image: url('@public/logo/logo.svg');
     background-size: contain;
     background-repeat: no-repeat;
     width: 128px;
@@ -41,7 +41,7 @@
   };
 
   .button__heart {
-    mask-image: url('../../../../public/icons/heart-disbled.svg');
+    mask-image: url('@public/icons/heart-disbled.svg');
     mask-size: contain;
     mask-repeat: no-repeat;
 
@@ -61,7 +61,7 @@
     right: 50%;
     top: 50%;
     transform: translate(50%, -50%);
-    mask-image: url('../../../../public/icons/bag.svg');
+    mask-image: url('@public/icons/bag.svg');
     mask-size: contain;
     mask-repeat: no-repeat;
     background: $primary-color;

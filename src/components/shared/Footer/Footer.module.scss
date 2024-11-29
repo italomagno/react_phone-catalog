@@ -1,4 +1,4 @@
-@import '../../../styles/main';
+@import '@styles/main';
 
 
 .footerContainer{
@@ -21,7 +21,7 @@
 .header__logo {
   height: 32px;
   width: 89px;
-  background-image: url('../../../../public/logo/logo.svg');
+  background-image: url('@public/logo/logo.svg');
   background-size: contain;
   background-repeat: no-repeat;
 };
@@ -71,7 +71,7 @@
     right: 50%;
     background-color: $primary-color;
     cursor: pointer;
-    mask-image: url('../../../../public/icons/chevron-up.svg');
+    mask-image: url('@public/icons/chevron-up.svg');
     mask-size: cover;
     mask-repeat: no-repeat;
   }
