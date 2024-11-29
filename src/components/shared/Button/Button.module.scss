@@ -1,0 +1,61 @@
+
+@import '../../../styles/main.scss';
+
+.button
+ {
+  position: relative;
+  font-family: $button-font-family;
+  font-size: $button-font-size;
+  font-weight: 700;
+  line-height: $button-font-line-height;
+  letter-spacing: $button-font-letter-spacing;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+
+
+  &.primary
+   {
+    background-color: $primary-color;
+    color: $white-color;
+    padding: 10px 20px;
+
+    &:hover
+     {
+      box-shadow: 0px 3px 13px 0px #17203166;
+     }
+     &:selected
+     {
+      background-color: $white-color;
+      border: solid 1px $elements-color;
+      color: $success-color;
+     }
+   }
+
+&.icon
+ {
+  font-weight: 500;
+  background-color: $white-color;
+  color: $black-color;
+  padding: 10px;
+  border: 1px solid $elements-color;
+  transition: all 0.3s;
+  &:hover
+   {
+    border: 1px solid $primary-color;
+   }
+   &:selected
+    {
+      background-color: $primary-color;
+      border: none;
+      color: $white-color;
+    }
+    &:disabled
+     {
+      background-color: $white-color;
+      color: $icons-color;
+      cursor: not-allowed;
+     }
+
+ }
+}

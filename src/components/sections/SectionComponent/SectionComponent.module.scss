@@ -1,0 +1,84 @@
+@import '../../../styles/main.scss';
+
+
+
+.sectionTitleContainer {
+  width: 100%;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+};
+
+.sectionTitle{
+  display: block;
+  font-size: $h2-font;
+  font-weight: 800;
+  line-height: $h2-line-height;
+  letter-spacing: $h2-letter-spacing;
+  color: $primary-color;
+
+};
+
+.sectionControllers{
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 16px;
+};
+
+.sectionButton{
+  height: 32px;
+  width: 32px;
+  border: solid 1px $elements-color;
+  background-color: $white-color;
+  transition: all 0.3s;
+
+  &.active{
+    border:solid 1px $elements-active-color;
+  }
+}
+
+.sectionLeftButton
+,.sectionRightButton{
+  height: 100%;
+  position: absolute;
+  transform: translate(50%, -50%);
+  top: 50%;
+  right: 50%;
+  height: 16px;
+  width: 16px;
+  margin-left: 16px;
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: $elements-color;
+  cursor: pointer;
+  transition: all 0.3s;
+};
+
+.sectionRightButton{
+  mask-image: url('../../../../public/icons/chevron-right.svg');
+
+  &.active{
+ background-color: $primary-color;
+  }
+
+};
+
+.sectionLeftButton{
+  mask-image: url('../../../../public/icons/chevron-left.svg');
+
+  &.active{
+    background-color: $primary-color;
+     }
+}
+
+.sectionContentContainer{
+  position: relative;
+  background-color: $white-color;
+  z-index: 4;
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}

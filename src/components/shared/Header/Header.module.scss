@@ -1,0 +1,72 @@
+@import '../../../styles/main.scss';
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  width: 100%;
+  border-bottom: 1px solid $elements-color;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: all 0.3s;
+
+  .header__left {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  .header__logo {
+    background-image: url('../../../public/logo/logo.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 128px;
+    height: 64px;
+  }
+
+  .header__ul {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    list-style: none;
+  }
+
+  .ButtonHeader {
+    height: 64px;
+    width: 64px;
+  };
+
+  .button__heart {
+    mask-image: url('../../../../public/icons/heart-disbled.svg');
+    mask-size: contain;
+    mask-repeat: no-repeat;
+
+    background: $primary-color;
+
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+  }
+
+
+  .button__bag {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    mask-image: url('../../../../public/icons/bag.svg');
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    background: $primary-color;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+  }
+}

@@ -1,1 +1,38 @@
-// not empty
+@import './styles/main.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: $white-color;
+  font-size: $body-font-size;
+  font-family: $body-font-family;
+  line-height: $body-font-line-height;
+  letter-spacing: $body-font-letter-spacing;
+
+  h1{
+    font-family: $h1-font;
+    font-size: $h1-size;
+    line-height: $h1-line-height;
+    letter-spacing: $h1-letter-spacing;
+  }
+  h2{
+    font-family: $h2-font;
+    font-size: $h2-size;
+    line-height: $h2-line-height;
+    letter-spacing: $h2-letter-spacing;
+  }
+  h3{
+    font-family: $h3-font;
+    font-size: $h3-size;
+    line-height: $h3-line-height;
+    letter-spacing: $h3-letter-spacing;
+  }
+  h4{
+    font-family: $h4-font;
+    font-size: $h4-size;
+    line-height: $h4-line-height;
+    letter-spacing: $h4-letter-spacing;
+  }
+
+};

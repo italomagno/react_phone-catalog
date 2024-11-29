@@ -1,0 +1,121 @@
+@import '../../../styles/main.scss';
+
+
+.heroPageContent{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: $white-color;
+  gap: 16px;
+
+};
+.heroPageTitle{
+  width: 100%;
+  margin-top: 120px;
+  font-size: $h1-font;
+  text-align: left;
+  margin-bottom: 56px;
+  font-weight: 800;
+  line-height: $h1-line-height;
+  letter-spacing: $h1-letter-spacing;
+  color: $primary-color;
+
+  &::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    width: 32px;
+    height: 32px;
+
+    cursor: pointer;
+
+
+  };
+
+};
+
+.HeroButtonLeft,
+.HeroButtonRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 32px;
+  background-color: $white-color;
+  border: 1px solid $elements-color;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &.active {
+    border:1px solid $elements-active-color;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    background-color: $elements-color;
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    z-index: 10;
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    border: 1px solid $primary-color;
+  }
+
+  &.active {
+
+    &::before {
+      background-color: $primary-color;
+    }
+  }
+}
+
+.HeroButtonLeft::before {
+  mask-image: url('../../../../public/icons/chevron-left.svg');
+}
+
+.HeroButtonRight::before {
+  mask-image: url('../../../../public/icons/chevron-right.svg');
+}
+
+.heroPageImage{
+  width: 1040px;
+  height: 400px;
+  background-image: url('../../../public/img/Banner.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat
+};
+
+.heroLinkControllers{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+  gap: 4px;
+
+};
+
+.heroLinkController {
+  height: 4px;
+  width: 14px;
+  background-color: $elements-color;
+  margin: 20px 10px;
+  transition: all 0.3s;
+  &.active{
+    background-color: $primary-color;
+  }
+};

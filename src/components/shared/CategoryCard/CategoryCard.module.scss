@@ -1,0 +1,58 @@
+@import '../../../styles/main.scss';
+
+
+.CategoryCard {
+  width: 368px;
+  height: 443px;
+  background-color: $white-color;
+  overflow: hidden;
+  a{
+    text-decoration: none;
+
+  }
+};
+
+.CategoryImage {
+  width: 368px;
+  height: 368px;
+  top: 0;
+  left: 0;
+  position: relative;
+  background-color: $primary-color;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../../public/img/category-tablets.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 70px 44px;
+    clip-path: inset(0);
+  }
+
+};
+
+.CategoryTitle {
+  font-family: $font-family-mont;
+  font-size: $h4-mobile-size;
+  font-weight: 600;
+  color: $primary-color;
+  margin-top: 24px;
+  text-align: left;
+};
+
+.CategoryDescription {
+  font-family: $body-font-family;
+  font-size: $body-font-size;
+  line-height: $body-font-line-height;
+  letter-spacing: $body-font-letter-spacing;
+  font-weight: 400;
+  color: $secondary-color;
+  margin-top: 4px;
+  text-align: left;
+};
+

@@ -1,11 +1,46 @@
+@font-face {
+  font-family: 'Mont';
+  src: url('../../public/fonts/Mont-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('../../public/fonts/Mont-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('../../public/fonts/Mont-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+
 /* Colors */
 $primary-color: #313237;
 $secondary-color: #89939A;
 $icons-color: #B4BDC3;
 $elements-color: #E2E6E9;
+$elements-active-color: #B4BDC3;
+
 $hover-bg-color: #FAFBFC;
 $white-color:#fff;
-$succes-color: #27AE60;
+$black-color: #000;
+$success-color: #27AE60;
 $error-color: #EB5757;
 $font-family: 'Arial, sans-serif';
 $font-size: 16px;
@@ -71,3 +106,15 @@ $h3-mobile-letter-spacing: 0;
 $h4-mobile-size: 16px;
 $h4-mobile-line-height: 20px;
 $h4-mobile-letter-spacing: 0;
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  background-color: $white-color;
+  max-width: 1136px;
+}

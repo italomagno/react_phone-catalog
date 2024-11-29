@@ -1,0 +1,121 @@
+@import '../../../styles/main.scss';
+
+
+.card{
+  width: 272px;
+  height: fit-content;
+  padding: 32px;
+  border: 1px solid $elements-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+};
+
+.cardImage{
+  width: 208px;
+  height: 196px;
+  background-image: url('../../../public/img/phones/apple-iphone-11-pro-max/gold/00.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+};
+
+.cardDescription{
+  font-size: $body-font-size;
+  font-weight: 600;
+  line-height: $body-font-line-height;
+  letter-spacing: $body-font-letter-spacing;
+  color: $primary-color;
+  text-align: left;
+  margin-top: 8px;
+};
+
+.CardPrice{
+  font-size: $h1-font;
+  font-weight: 800;
+  line-height: $h1-line-height;
+  letter-spacing: $h1-letter-spacing;
+  color: $primary-color;
+  margin-top: 8px;
+  text-align: left;
+};
+
+.horizontalRol{
+height: 1px;
+width: 100%;
+background-color: $elements-color;
+margin: 8px 0;
+};
+
+.CardInformations{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px 0;
+  width: 100%;
+};
+
+.CardInformation{
+display: flex;
+justify-content: space-between;
+align-items: center;
+};
+
+.CardInformationCaracteristic{
+font-size: $small-font-size;
+font-weight: 700;
+line-height: $small-font-line-height;
+letter-spacing: $small-font-letter-spacing;
+color: $secondary-color;
+
+};
+
+.CardInformationText{
+  font-size: $small-font-size;
+  font-weight: 700;
+  line-height: $small-font-line-height;
+  letter-spacing: $small-font-letter-spacing;
+  color: $primary-color;
+  text-align: right
+
+};
+
+
+.cardButtonContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+
+};
+.cardButtonAddToCart{
+  width: 160px;
+  height: 40px;
+  align-items: center;
+  border: solid 1px $elements-active-color;
+
+}
+
+.cardButtonAddLike{
+  width: 40px;
+  border: solid 1px $elements-active-color;
+  height: 40px;
+}
+
+.button__heart{
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  background-image: url('../../../../public/icons/heart-disbled.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  &.active {
+    background-image: url('../../../../public/icons/heart-filled.svg');
+  }
+  cursor: pointer;
+};

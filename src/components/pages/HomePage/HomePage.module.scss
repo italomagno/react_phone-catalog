@@ -1,0 +1,63 @@
+@import '../../../styles/main.scss';
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  background-color: $white-color;
+  max-width: 1072px;
+}
+
+.CategoryContainer{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: center;
+
+  .CategoryCard{
+    width: 100%;
+    max-width: 368px;
+    height: 368px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 24px
+  };
+
+  .CategoryImage{
+    height: 368px;
+    width: 368px;
+    background-image: url('../../../public/img/category-phones.png');
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+  };
+
+  .CategoryTitle{
+    font-size: $h3-font;
+    font-weight: 800;
+    line-height: $h3-line-height;
+    letter-spacing: $h3-letter-spacing;
+    color: $primary-color;
+    text-align: left;
+  };
+
+  .CategoryDescription{
+    font-size: $body-font-size;
+    font-weight: 500;
+    line-height: $body-font-line-height;
+    letter-spacing: $body-font-letter-spacing;
+    color: $secondary-color;
+    text-align: left;
+  };
+};
+
+
+
+
